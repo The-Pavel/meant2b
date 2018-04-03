@@ -1,0 +1,16 @@
+<!--pages/show/show.wxml-->
+
+<view class="header">
+  <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 20%, rgba(0,36,61,0.6) 60%), url('{{image}}');">
+  <view class="banner-content">
+      <view class="h1">{{title}}</view>
+      <view>{{match}}% MATCH</view>
+      <view>Status: {{status}}</view>
+  </view>
+  </view>
+  <view class="banner-content">
+      <view class="tag">{{summary}}</view>
+  </view>
+  <button bindtap='deleteJob'>Delete Permanently</button>
+  <button bindtap='applyToJob'>Apply Now!</button>
+</view>

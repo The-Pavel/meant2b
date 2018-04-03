@@ -1,0 +1,20 @@
+teachers
+
+id,name
+1,Sergio
+2,Harrison
+3,Dounan
+
+students
+
+id,name
+1,Katya
+2,Isabel
+3,Conan
+
+classrooms (created for the many to many relationship)
+
+id,name,teacher_id,student_id
+1,Physics,2,1
+2,Physics,2,2
+3,Physics,2,3

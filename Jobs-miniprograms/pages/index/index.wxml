@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="navbar">
+  <navigator url="../new/new">New Jobs</navigator>
+  <navigator class="current-tab" hover-start-time="20" hover-stay-time="20" >Saved Jobs</navigator>
+</view>
+
+<view class="job" bindtap="showJob" wx:for="{{jobs}}" wx:for-item="job" wx:key="job.id" data-job="{{job}}">
+  <view class='job-match'>
+    <view class='job-matchpercent'>{{job.match}}%</view>
+    <view class="text">match</view>
+  </view>
+  <view class="job-content">
+    <view class="company-logo" style="background-image: url({{job.image}}); background-size: contain; background-repeat:no-repeat; background-position:center"></view>
+    <view class="h3">{{job.title}}</view>
+    <view class='job-body'>{{job.summary}}</view>
+  </view>
+  <view class="apply-status">{{job.status}}</view> 
+</view>

@@ -1,0 +1,18 @@
+<!-- image tags need to be closed>
+<!-- code for running javascript in view is {{ js code }} -->
+<!-- adding bindtap is the same as adding event listener -->
+<!-- wxss - use rpx instead of px for responsive pixels -->
+<!-- json file is the collection of all data and functions your app needs -->
+<!-- can only load 5 pages at the same time, but you only need navigateTo for pages you want to have go back function to -->
+<!-- if you want to modify global data, call getApp().globalData directly, without saving the collection into a variable>
+<view class="headline">Test</view> <!-- like a div -->
+<!-- if you want to save something as a template you need to put template opening and closing tags around your wxml and put it in shared folder>
+<text class="subhead">Hello World</text> <!-- like a paragraph -->
+
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <view class="banner-content">
+    <view class="h1">Le Wagon Berlin</view>
+    <view class="tag">Learn to code with us in Berlin</view>
+    <button bindtap="indexRestaurants" class="btn btn-primary btn-lg">Start now</button>
+  </view>
+</view>

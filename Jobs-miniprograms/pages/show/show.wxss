@@ -1,0 +1,28 @@
+/* pages/show/show.wxss */
+.banner {
+  color: white;
+  text-align: center;
+  height: 50vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: 10% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx;
+  opacity: 0.6;
+}
+
+.banner-content {
+  text-align: center;
+
+}
+.banner-content .h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner-content .tag {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,18 @@
+<!--pages/new/new.wxml-->
+<view class="navbar">
+  <navigator class="current-tab">New Jobs</navigator>
+  <navigator open-type='reLaunch' url="../index/index" hover-start-time="20" hover-stay-time="20" >Saved Jobs</navigator>
+</view>
+<view class="job-card" wx:for="{{new_jobs}}" wx:for-item="new_job" wx:key="new_job.id" data-newjob="{{new_job}}">
+  <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 20%, rgba(0,36,61,0.6) 60%), url('{{new_job.image}}');">
+  <view class="banner-content">
+      <view class="h1">{{new_job.title}}</view>
+      <view>{{new_job.match}}% MATCH</view>
+      <view>Status: {{new_job.status}}</view>
+  </view>
+  </view>
+  <view class="banner-content">
+      <view class="tag">{{new_job.summary}}</view>
+  </view>
+  <button bindtap="saveJob">Save to Your Jobs</button>
+</view>

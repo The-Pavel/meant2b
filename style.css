@@ -1,0 +1,9 @@
+
+element.style {
+    display: block;
+    opacity: 1;
+    transform: translateX(0vw) translateY(0vw) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+    width: 160px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);

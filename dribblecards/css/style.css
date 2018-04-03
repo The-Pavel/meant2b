@@ -1,0 +1,63 @@
+.card {
+  background-color: white;
+  width: 400px;
+}
+
+.card-body {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.card-image {
+  background-image: url('http://profilepics.xyz/wp-content/uploads/2017/07/Sad-Profile-Pic-4.png');
+  background-size: cover;
+  height: 400px;
+  opacity: 1;
+  position: relative;
+}
+
+.card-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-color: lightgrey;
+}
+
+.card-social {
+  text-align: right;
+  padding: 10px;
+}
+
+.card-social a {
+  color: grey;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+
+.card-image:hover .card-image {
+  opacity: 0;
+}
+
+.card-image:hover .card-text {
+  opacity: 1;
+}
+
+.card-footer h4 {
+  margin: 0;
+  padding-left: 5px;
+}
+
+.avatar {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}

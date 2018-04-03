@@ -1,0 +1,13 @@
+<!--pages/reslist/reslist.wxml-->
+<text>pages/reslist/reslist.wxml</text>
+
+<view class="card" bindtap ="showRestaurant" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url({{ restaurant.image }});" wx:for ="{{restaurants}}" wx:for-item="restaurant" wx:key= "restaurant.id" data-id="{{ restaurant.id }}">
+  <view class="card-category">{{ restaurant.address }}</view>
+  <view class="card-description">
+    <view class="h2" >{{ restaurant.name }}</view>
+    <view class="tag">{{ restaurant.description }}</view>
+  </view>
+  <a class="card-link" href="#" ></a>
+</view>
+
+
