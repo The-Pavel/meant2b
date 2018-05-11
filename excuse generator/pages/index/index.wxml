@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class='shadow'>
+  </view>
+  <button class="button" bindtap='genExcuse'>
+      Generate!
+    </button>
+
+
+</view>
+
+<picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected" class='picker'>
+    {{array[index]}}
+</picker>
+
+
+
+
