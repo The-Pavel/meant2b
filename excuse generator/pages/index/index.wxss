@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.picker {
+  height: 50rpx;
+  vertical-align: middle;
+  font-size: 38rpx !important;
+  
+}
+
 .btntext {
   position: absolute;
   top: 115rpx;

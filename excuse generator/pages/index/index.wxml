@@ -10,7 +10,7 @@
 
 </view>
 
-<picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected" class='picker'>
+<picker class='picker' mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected" class='picker'>
     {{array[index]}}
 </picker>
 

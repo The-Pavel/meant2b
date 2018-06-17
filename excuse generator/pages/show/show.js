@@ -5,13 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    reasons: ["I am not coming to work today because...", "I can not meet you because...", "I can't go out today because..."],
+    index: 0
   },
 
+  selectExcuse: function() {
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({index: options.index})
     var that = this
     this.setData(getApp().globalData.excuses)
     var words = [
@@ -21,7 +26,6 @@ Page({
       'I have to save Krypton'
     ];
     let index = 0;
-    let excuse = 'My mom needed help in the garden'
 
       // setTimeout(function () {
       //   while (index < 5) {
@@ -30,10 +34,17 @@ Page({
       // console.log(excuse)
       // }}, 400);
     
-
-      this.setData({
-        excuse: this.data.excuses[Math.floor(Math.random() * (this.data.excuses).length)]
-      })
+      let i = 0
+      while (i < 20) {
+        that.setData({
+          excuse: that.data.excuses[Math.floor(Math.random() * (that.data.excuses).length)]
+        })
+        i += 1
+        for (let l = 0; l < 100000000; l++) {
+          l == l
+        }
+      }
+      
   
     
     

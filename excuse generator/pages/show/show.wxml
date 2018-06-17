@@ -1,6 +1,7 @@
 <!--pages/show/show.wxml-->
 <text>pages/show/show.wxml</text>
 <view class='container'>
+  <text>{{reasons[index - 1]}}</text>
   <text class='excuse'>{{ excuse }}</text>
   <button bindtap='copyText'>Copy Text!</button>
 </view>
